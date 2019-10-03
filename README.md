@@ -11,7 +11,7 @@ In the first release we are offering a fixed web platform of 1200px x Unlimited,
 
 INSTRUCTIONS FOR ADDING WORDPRESS LINKS
 
-We recommend installing Wordpress in a "w" directory below the root for the Shell. Create a Mysql database and password and install joomla from wordpress.org
+We recommend installing Wordpress in a "w" directory below the root for the Shell. Create a Mysql database and password and install wordpress from wordpress.org
 
 INSTRUCTIONS FOR ADDING JOOMLA LINKS
 
@@ -20,6 +20,8 @@ We recommend installing Joomla in a "h" directory below the root for the Shell. 
 INSTRUCTIONS FOR ADDING FUSIONSHELL TO CPANEL
 
 On Cpanel put the Shell in the root hosting account, and use Softalicious, or Installatron to install applications for the shell. Then just change the links in the header.html file to the location of your code. And Wala you are done.
+
+EXAMPLES CAN BE FOUND ON CAPITOLTECHNOLOGY.US, AND GREENVILLEASSOCIATES.US
 
 If you do this will allow you to maintain consistency with future releases. We have a very complicated example we are building under capitoltechnology.us which uses the same technology fully blown out if you want to see a live example.
 
