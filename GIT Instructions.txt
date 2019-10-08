@@ -1,0 +1,7 @@
+//GIT INSTRUCTIONS
+// Please note Git will not overwrite an existing directory so the new directory has to be clean
+// Otherwise there are some advanced switches for Git to overwrite existing which you need to consult the manual for.
+
+
+$ sudo apt-get install git python
+$ sudo git clone https://github.com/greenvilleassociates/gsuba-fusion /web/testgitdir/
