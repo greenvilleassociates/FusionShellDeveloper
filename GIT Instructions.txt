@@ -2,6 +2,32 @@
 // Please note Git will not overwrite an existing directory so the new directory has to be clean
 // Otherwise there are some advanced switches for Git to overwrite existing which you need to consult the manual for.
 
+//TESTDIR - BELOW IS THE TARGET WEB SERVER DIRECTORY
 
 $ sudo apt-get install git python
-$ sudo git clone https://github.com/greenvilleassociates/gsuba-fusion /web/testgitdir/
+$ sudo git clone https://github.com/greenvilleassociates/gsuba-fusion /web/testgitdir/  
+
+//GSUBA-FUSION BASIC IS COMPLETE (1.0). STOP
+//FOR THE ADVANCED VERSION OR HELP WITH JOOMLA- GO PAST 
+
+//CREATE MYSQL DATABASES FOR JOOMLA AND WORDPRESS
+mysql -u root -p
+create database gsubafusion-joomla;
+create user 'joomla1'@'localhost' identified by 'pass1';
+grant all on gsubafusion-joomla.* to 'joomla1'@'localhost';
+//JOOMLA READY FOR INSTALL
+create database gsubafusion-wordpress;
+create user 'wordpress1'@'localhost' identified by 'pass1';
+grant all on gsubafusion-wordpress.* to 'wordpress1'@'localhost';
+//WORDPRESS READY FOR INSTALL
+
+//CHANGE INTO THE WORDPRESS DIRECTORY
+cd /web/testgitdir/w
+unzip latest.zip -d /web/testgitdir/w
+//RUN THE WORDPRESS INSTALLER TO MYSQL WITH wordpress1 as the user, pass1 as the password. Host = LOCALHOST
+
+//CHANGE INTO THE JOOMLA DIRECTORY
+cd /web/testgitdir/h
+unzip joomla.zip -d /web/testgitdir/h
+//RUN THE JOOMLA INSTALLER TO MYSQL WITH joomla1 as the user, pass1 as the password. Host = LOCALHOST
+
