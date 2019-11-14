@@ -1,2 +1,2 @@
-!copy default.index.html /web/fusionshelltarget
-!copy default.framebase.html /web/fusionshelltarget
+rem copy default.index.html c:\web\fusionshelltarget
+rem copy default.framebase.html c:\web\fusionshelltarget
