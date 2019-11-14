@@ -28,7 +28,7 @@ If you do this will allow you to maintain consistency with future releases. We h
 
 It took a few years to make it look nice... so it looks simple but to get cross-browser support looking good is quite difficult in fact.
 
-RELEASE2 is coming... and it will dynamically adjust the framesize we have set to 1300px's in the Index.html. Changing that feed to 1040px, or 1200px is easy to do. PLease note almost all new phones, and new PC's will support 1400x1200 resolutions or higher. Older PC's typically dont do too well with HTML in general so we have decided to make a clean break.
+RELEASE2 is coming... and it will both install wordpress and joomla automatically but will also dynamically adjust the framesize we have set to 1300px's in the Index.html using javascript. Changing that feed to 1040px, or 1200px is easy to do. PLease note almost all new phones, and new PC's will support 1400x1200 resolutions or higher. Older PC's typically dont do too well with HTML in general so we have decided to make a clean break.
 
 RELEASE3 will include an integreate Web Mobility client for Android, and for IoS which should be Q1, 2020.
 
