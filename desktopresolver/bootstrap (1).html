@@ -1,0 +1,68 @@
+<html>
+<header>
+<title>Bootstrap</title>
+</header>
+<body>
+<BR>ScreenSize<BR>
+</body>
+
+
+</html>
+<script type="text/javascript">
+<!--
+ function viewport()
+{
+var e = window
+, a = 'inner';
+if ( !( 'innerWidth' in window ) )
+{
+a = 'client';
+e = document.documentElement || document.body;
+document.getElementById("demo").innerHTML = 5 + 6;
+}
+return { width : e[ a+'Width' ] , height : e[ a+'Height' ] }
+}
+
+
+
+
+
+ var viewportwidth;
+ var viewportheight;
+  
+ // the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+  
+ if (typeof window.innerWidth != 'undefined')
+ {
+      viewportwidth = window.innerWidth,
+      viewportheight = window.innerHeight
+ }
+  
+// IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+ 
+ else if (typeof document.documentElement != 'undefined'
+     && typeof document.documentElement.clientWidth !=
+     'undefined' && document.documentElement.clientWidth != 0)
+ {
+       viewportwidth = document.documentElement.clientWidth,
+       viewportheight = document.documentElement.clientHeight
+ }
+  
+ // older versions of IE
+  
+ else
+ {
+       viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
+       viewportheight = document.getElementsByTagName('body')[0].clientHeight
+ }
+document.write('<p>Your Usable Screen Size is '+viewportwidth+'x'+viewportheight+'</p>');
+//copyfile.js
+const fs = require('fs');
+
+// destination will be created or overwritten by default.
+fs.copyFile('.\filetestcopy.txt', '.\filetestcopy2.txt', (err) => {
+  if (err) throw err;
+  console.log('File was copied to destination');
+});
+//-->
+</script>
