@@ -1,0 +1,90 @@
+<html>
+<header>
+<title>Bootstrap</title>
+</header>
+<body>
+<BR>ScreenSize<BR>
+</body>
+
+</html>
+
+<script type="text/javascript">
+ 
+function wait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end < start + ms) {
+     end = new Date().getTime();
+  }
+}
+
+ // the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+  
+ if (typeof window.innerWidth != 'undefined')
+ {
+      viewportwidth = window.innerWidth;
+      viewportheight = window.innerHeight;
+      document.write('<p>Your Usable Screen Size is '+viewportwidth+'x'+viewportheight+'</p>');
+ }
+  
+// IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+ 
+ else if (typeof document.documentElement != 'undefined'
+     && typeof document.documentElement.clientWidth !=
+     'undefined' && document.documentElement.clientWidth != 0)
+ {
+       viewportwidth = document.documentElement.clientWidth;
+       viewportheight = document.documentElement.clientHeight;
+       document.write('<p>Your Usable Screen Size is '+viewportwidth+'x'+viewportheight+'</p>');
+ }
+  
+ // older versions of IE
+  
+ else
+ {
+       viewportwidth = document.getElementsByTagName('body')[0].clientWidth;
+       viewportheight = document.getElementsByTagName('body')[0].clientHeight;
+       document.write('<p>Your Usable Screen Size is '+viewportwidth+'x'+viewportheight+'</p>');
+ }
+
+
+
+	
+    if (viewportwidth > 1600)
+	{
+	//document.write('<p>Width is MEGA.... Choose Apple  '+viewportwidth+'x'+viewportheight+'</p>' );
+	//wait(7000);
+	//break;
+	////return;
+	window.location.href = "https://www.pacerlink.info/fusion/framebase.html";
+	}
+	else if (viewportwidth > 1400)
+	{
+	//document.write('<p>Width is Big.... Choose Apple  '+viewportwidth+'x'+viewportheight+'</p>' );
+	//wait(7000);
+	window.location.href = "https://www.pacerlin.info/fusion/index1400.html";
+	//return 0;
+	//break;
+	}
+	else if (viewportwidth > 1100)
+	{
+	//document.write('<p>Width is Standard.... No Need to Change the BaseWidth of 1100px  '+viewportwidth+'x'+viewportheight+'</p>' );
+	//wait(7000);
+	window.location.href = "http://www.pacerlink.info/fusion/index.html";
+	//return 0;
+	//break;
+	}
+	else 
+	{
+	//document.write('<p>Width is Below Standard - Migrating to the Mobile Browser'+viewportwidth+'x'+viewportheight+'</p>' );
+	window.location.href = "http://www.pacerlink.info/fusion/index.html";
+    //wait(7000);
+	//break;
+    }
+
+
+////window.location.href = "http://www.w3schools.com/3.html";
+//}
+//)};
+//-->
+</script>
